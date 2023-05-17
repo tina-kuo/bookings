@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/tina-kuo/bookings/pkg/config"
-	"github.com/tina-kuo/bookings/pkg/models"
-	"github.com/tina-kuo/bookings/pkg/render"
+	"github.com/tina-kuo/bookings/internal/config"
+	"github.com/tina-kuo/bookings/internal/models"
+	"github.com/tina-kuo/bookings/internal/render"
 )
 
 // Repo the repository used by the handlers
