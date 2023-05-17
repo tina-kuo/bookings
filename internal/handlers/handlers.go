@@ -7,6 +7,7 @@ import (
 	"net/http"
 
 	"github.com/tina-kuo/bookings/internal/config"
+	"github.com/tina-kuo/bookings/internal/forms"
 	"github.com/tina-kuo/bookings/internal/models"
 	"github.com/tina-kuo/bookings/internal/render"
 )
@@ -57,7 +58,14 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 // Reservation renders the make a reservation page and displays form
 func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "make-reservation.page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservation.page.tmpl", &models.TemplateData{
+		Form: forms.New(nil),
+	})
+}
+
+// PostReservation handles the posting of a reservation form
+func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
+
 }
 
 // Generals renders the general's quarters room page
