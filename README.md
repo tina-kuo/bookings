@@ -5,3 +5,4 @@ Learning the basics of building a bookings website with Go following the Buildin
 - Uses the [chi router](https://github.com/go-chi/chi) 
 - Uses [alex edwards SCS](https://github.com/alexedwards/scs) session management
 - Uses [noserf](https://github.com/justinas/nosurf)
+- Uses [soda](https://gobuffalo.io/documentation/database/pop/)
